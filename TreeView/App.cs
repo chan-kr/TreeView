@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cupertino.Forms.UI.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace TreeView
         protected override void OnStartup(StartupEventArgs e) // *override 부모 클래스의 메소드를 재정의 할 때 쓰는 키워드
         {   
             base.OnStartup(e);                                // base : 부모클래스를 말하는 것 같음.
-            Window window = new();                            // C# 9.0부터는 생성자를 호출할 때 "new()" 만 써도 됌.
+            CupertinoWindow window = new();                            // C# 9.0부터는 생성자를 호출할 때 "new()" 만 써도 됌.
             window.Title = "TreeView";
             window.ShowDialog();
 
